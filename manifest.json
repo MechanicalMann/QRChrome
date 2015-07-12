@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "QRChrome",
+	"version": "0.1",
+	"description": "Generates QR codes from selected text, link and media URLs, and page URLs.",
+	"permissions": [
+		"activeTab",
+		"contextMenus",
+		"tabs"
+	],
+	"icons": {
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"128": "icon128.png"
+	},
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	},
+	"content_scripts": [
+		{
+			"matches": [ "<all_urls>" ],
+			"js": [ "js/qrcode.min.js", "js/qrchrome.js" ],
+			"css": [ "css/qrchrome.css" ]
+		}
+	],
+	"web_accessible_resources": [
+		"img/*"
+	]
+}

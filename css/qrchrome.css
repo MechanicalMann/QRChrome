@@ -1,0 +1,38 @@
+.qrchrome-overlay {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.42);
+	z-index: 9001;
+}
+
+.qrchrome-content {
+	position: relative;
+	height: 296px;
+	width: 296px;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #ffffff;
+ 	box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.42);
+}
+
+.qrchrome-loader {
+	width: 100%;
+	height: 100%;
+	background-image: url('chrome-extension://__MSG_@@extension_id__/img/spinner.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.qrchrome-image {
+	width: 100%;
+	height: 100%;
+}
+
+.qrchrome-image img {
+	width: 100%;
+}
